@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+body {
+  font-family: "Comic Neue", cursive;
+  max-width: 500px;
+  margin: auto;
+}
+.App {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.image-container {
+  width: 600px;
+  height: 250px;
+  background-color: #ff9b73;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+}
+
+.image-container img {
+  padding: 30px;
+  display: block;
+  margin: auto;
+}
+
+.image-container p {
+  text-align: center;
+}
+
+.amount {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.giveAll {
+  cursor: pointer;
+  height: 100px;
+  transition: width 2s;
+}
+.giveAll:hover {
+  font-size: 30px;
+  transition: 1s;
+}
+
+.giveAll:after {
+  transition: 1s;
+}
